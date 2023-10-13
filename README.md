@@ -1,8 +1,6 @@
 # Rockpaperscissor_Game
 Description:
-
 Welcome to the classic Rock-Paper-Scissors game, implemented using HTML, CSS, and JavaScript. Have fun playing this game against the computer in your web browser!
-
 Features:
   -A user-friendly and visually appealing interface with well-designed graphics.
   -Play a traditional Rock-Paper-Scissors game against a computer opponent.
