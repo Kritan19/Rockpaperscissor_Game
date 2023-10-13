@@ -1,6 +1,6 @@
 # Rockpaperscissor_Game
 
-Linl = https://kritan19.github.io/Rockpaperscissor_Game/
+Link = https://kritan19.github.io/Rockpaperscissor_Game/
 
 
 Description:
