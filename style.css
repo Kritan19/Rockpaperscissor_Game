@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+    padding: 0px;
+    background-color: #998877;
+    
+}
+
+.heading{
+    font-size: 15px ;
+    margin-top: 20px;
+    margin-left: 460px;
+    text-decoration:underline;
+}
+.board{
+    margin-top:10px;
+    margin-left: 270px;
+    height: 500px;
+    width : 850px;
+    border: 3.5px solid #000;
+    border-style:dotted;
+    border-radius: 25px;
+}
+
+.score{
+    margin: 20px;
+    height: 50px;
+    width: 700px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    font-size: 30px;
+}
+
+#computerScore
+#playerScore{
+    display: flexbox;
+    background-color: aquamarine;
+    width: auto;
+}
+
+.weaponChooseText{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.weaponsChoose{
+    margin: 20px;
+    /* background-color: blue; */
+    height: 200px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rock,
+#paper,
+#scissor{
+    margin: 10px;
+    height: 170px;
+    width: 200px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    text-shadow: #998877;
+    
+    
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border: 5px solid;
+    border-radius: 10px;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#resultBox{
+    height: 30px;
+    width: 400px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 12px;
+    border: 3px solid;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bolder;   
+}
+
+#ComputerWeaponResult{
+    height: 30px;
+    width: 400px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 12px;
+    border: 3px solid;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bolder;   
+}
+
+.Createdby{
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
