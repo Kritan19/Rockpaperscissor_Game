@@ -122,6 +122,23 @@ function showPopup(title, message, type = 'info') {
                 max-width: 90%;
                 width: 400px;
                 animation: popupFadeIn 0.3s ease-out;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .popup, .popup-content, .popup h3, .popup p, .popup button {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body.dark-theme .popup-content {
+                background: linear-gradient(135deg, #2c3e50, #34495e);
+                color: #ecf0f1;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            }
+            body.dark-theme .popup-content h3 {
+                color: #ecf0f1;
+            }
+            body.dark-theme .popup-content p {
+                color: #bdc3c7;
             }
 
             @keyframes popupFadeIn {
@@ -522,5 +539,25 @@ function initGame() {
     );
 }
 
+// Theme toggle
+function initTheme() {
+    const toggle = document.getElementById('theme-switch');
+    const saved = localStorage.getItem('theme') || 'light';
+    const apply = (theme) => {
+        document.body.classList.toggle('dark-theme', theme === 'dark');
+        document.body.classList.toggle('light-theme', theme !== 'dark');
+        toggle.checked = theme === 'dark';
+    };
+    apply(saved);
+    toggle.addEventListener('change', () => {
+        const next = toggle.checked ? 'dark' : 'light';
+        localStorage.setItem('theme', next);
+        apply(next);
+    });
+}
+
 // Start the game when DOM is loaded
-document.addEventListener('DOMContentLoaded', initGame);
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    initGame();
+});
